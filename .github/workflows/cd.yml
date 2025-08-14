@@ -28,7 +28,7 @@ jobs:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: "my-node-app"
-          environment_name: "my-node-app-env" 
-          region: "us-east-1"  
-          version_label: "v${{ github.run_number }}"
+          environment_name: "my-node-app-env"
+          region: "us-east-1"
+          version_label: "v${{ github.run_number }}" # <-- Changed to auto-generate version
           deployment_package: deploy.zip
